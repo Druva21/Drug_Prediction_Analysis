@@ -63,5 +63,3 @@ Drug_Prediction_Analysis/
 
 4. View results inside `results/` and visualizations in `images/`.
 
-## Author
-- B Rupesh Reddy (2022BCS0083)
