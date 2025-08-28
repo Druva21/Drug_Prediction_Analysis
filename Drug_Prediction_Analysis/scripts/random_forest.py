@@ -1,0 +1,29 @@
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+from preprocess import load_and_preprocess
+
+X_train, X_test, y_train, y_test, _ = load_and_preprocess()
+
+model = RandomForestClassifier(n_estimators=100, criterion='entropy', random_state=42)
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+
+print("Accuracy:", accuracy_score(y_test, y_pred))
+print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
+print("Classification Report:\n", classification_report(y_test, y_pred))
+
+plt.figure(figsize=(6,4))
+sns.heatmap(confusion_matrix(y_test, y_pred), annot=True, fmt='d', cmap='Blues')
+plt.title("Random Forest - Confusion Matrix")
+plt.show()
+
+# Feature importance plot
+importances = model.feature_importances_
+indices = np.argsort(importances)[::-1]
+plt.figure(figsize=(8,6))
+sns.barplot(x=importances[indices], y=np.array(X_train.columns)[indices], palette='viridis')
+plt.title("Feature Importance - Random Forest")
+plt.show()
