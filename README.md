@@ -32,7 +32,7 @@ This project demonstrates proficiency in machine learning classification by impl
 ![Data Distribution](images/data_distribution.png)
 
 ### Feature Importance Analysis
-ok ![Feature Importance](images/final_analysis.png)
+![Feature Importance](images/final_analysis.png)
 
 ### Model Evaluation
 ![Confusion Matrix](images/confusion_matrix.png)
