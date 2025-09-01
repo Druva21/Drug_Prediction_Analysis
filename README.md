@@ -177,9 +177,6 @@ python scripts/main.py
 - **Target**: Drug type (DrugA, DrugB, DrugC, DrugX, DrugY)
 - **Type**: Multiclass classification problem
 
-## 👥 Author
-
-- **B Rupesh Reddy** (2022BCS0083)
 
 ## 📚 References
 
