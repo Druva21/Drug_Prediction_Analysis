@@ -1,0 +1,24 @@
+# Python cache and virtual envs
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VSCode and IDE settings
+.vscode/
+.idea/
+
+# Data files
+*.csv
+*.xlsx
+
+# Results and generated files
+/results/*
+/images/*
