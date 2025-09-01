@@ -52,7 +52,7 @@ This project demonstrates proficiency in machine learning classification by impl
 ![Random Forest Feature Importance](images/feature_importance_random_forest.png)
 
 ### K-Means Clustering Analysis
-![K-Means Results](images/kmeans_results.png)
+![K-Means Results](images/k-means_results.png)
 
 **PCA Visualization**
 ![K-Means PCA](images/k-means_pca.png)
