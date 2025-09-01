@@ -2,7 +2,7 @@
 
 A comprehensive machine learning project that predicts the appropriate drug type for patients based on their medical attributes using multiple classification algorithms.
 
-![Model Performance Summary](images/model_performance_summary.png)
+
 
 ## 🎯 Project Overview
 
